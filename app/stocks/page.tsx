@@ -12,7 +12,7 @@ export default function StocksPage() {
   const [filters, setFilters] = useState({
     stockname: '',
     price_change_value: '',
-    volumechangerate: '', // 거래량을 위한 텍스트 입력
+    volumechangerate: '',
     volume_trend: 'all',
     candle_pattern: 'all',
     price_change_status: 'all',
@@ -88,7 +88,6 @@ export default function StocksPage() {
 
 
   return (
-
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">한국주식 데이터</h1>
     
@@ -131,9 +130,7 @@ export default function StocksPage() {
       >
         필터 초기화
       </button>
-
     </div>
-
 
       {/* 필터링 옵션 */}
       <div className="mb-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -148,7 +145,6 @@ export default function StocksPage() {
             className="border border-gray-300 rounded px-2 py-1 w-full"
           />
         </div>
-
 
         {/* 가격변화율 필터 */}
         <div>
@@ -308,9 +304,7 @@ export default function StocksPage() {
             <option value="하락">하락</option>
           </select>
         </div>
-
       </div>
-
 
       {/* 로딩 상태 처리 */}
        {isLoading ? (
