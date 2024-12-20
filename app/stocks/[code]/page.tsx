@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { Stock } from '@/app/type/types/stock';
+import { Stock } from '@/app/type/stock';
 import Link from 'next/link';
 import { fetchStockData } from '@/app/action/api';
 

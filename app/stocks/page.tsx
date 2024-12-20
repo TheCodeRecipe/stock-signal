@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { Stock } from '../type/types/stock';
+import { Stock } from '../type/stock';
 import { formatDate } from '../utils/utils';
 import { dataLoad, fetchLastUpdate } from '../action/api';
 import { actionPriority } from '../data/actionPriority';
