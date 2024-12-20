@@ -6,7 +6,6 @@ import { formatDate } from './utils/utils';
 import { fetchLastUpdate } from './action/api';
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false);
   const [lastUpdate, setLastUpdate] = useState<string | null>(null);
 
   // 최근 업데이트 시간 가져오기
@@ -41,10 +40,7 @@ export default function Home() {
   <div className="mb-8">
     <Link href="/stocks">
       <button
-        className={`w-64 px-6 py-3 text-lg font-semibold text-white rounded-lg shadow-md transition-all ${
-          isLoading ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600'
-        }`}
-        disabled={isLoading}
+        className="w-64 px-6 py-3 text-lg font-semibold text-white rounded-lg shadow-md transition-all bg-blue-500 hover:bg-blue-600"
       >
         View Stock Data
       </button>
