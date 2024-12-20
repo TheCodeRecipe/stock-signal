@@ -37,11 +37,19 @@ export default function StockDetailPage() {
   }, [stock]);
 
   if (isLoading) {
-    return <p>Loading stock data...</p>;
+    return (
+    <div className="flex items-center justify-center h-screen">
+      <p>Loading stock data...</p>
+    </div>
+    );
   }
 
   if (!stock) {
-    return <p>No stock data available for code: {code}</p>;
+    return ( 
+    <div className="flex items-center justify-center h-screen">
+      <p>No stock data available for code: {code}</p>
+    </div>
+    );
   }
   return (
     <div className="container mx-auto p-6">
