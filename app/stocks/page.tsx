@@ -326,7 +326,7 @@ export default function StocksPage() {
                 <th className="px-4 py-2 min-w-[150px] whitespace-nowrap">주식명</th>
                 <th className="px-4 py-2 min-w-[50px] whitespace-nowrap">코드</th>
                 <th className="px-4 py-2 min-w-[50px] whitespace-nowrap">가격</th>
-                <th className="px-4 py-2 min-w-[50px] whitespace-nowrap">변화률</th>
+                <th className="px-4 py-2 min-w-[100px] whitespace-nowrap">변화률</th>
                 {/* <th className="px-4 py-2 min-w-[50px] whitespace-nowrap">가격낙폭</th> */}
                 <th className="px-4 py-2 min-w-[80px] whitespace-nowrap">거래량</th>
                 <th className="px-4 py-2 min-w-[50px] whitespace-nowrap">거래률</th>
@@ -369,7 +369,7 @@ export default function StocksPage() {
                     }`}
                   >
                     {stock.price_change_value !== null && stock.price_change_value !== undefined
-                      ? stock.price_change_value.toFixed(2)
+                      ? stock.price_change_value.toFixed(2) + '%'
                       : 'N/A'}
                   </td>
                   {/* <td
