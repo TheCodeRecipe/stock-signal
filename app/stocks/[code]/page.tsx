@@ -8,19 +8,18 @@ import { fetchStockData } from '@/app/action/api';
 
 
 export default function StockDetailPage() {
-  const { code } = useParams<{ code: string }>(); // URL에서 기업 코드 가져오기
+  const { code } = useParams<{ code: string }>();
   
   const [stock, setStock] = useState<Stock | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // 특정 주식 데이터 불러오기
   useEffect(() => {
     const fetchData = async () => {
-      console.log("Fetching stock data for code:", code); // 디버깅
+      console.log("Fetching stock data for code:", code);
       setIsLoading(true);
       try {
         const data = await fetchStockData(code);
-        console.log("Fetched stock data:", data); // 디버깅
+        console.log("Fetched stock data:", data);
         setStock(data.stock);
       } catch (error) {
         console.error("Error fetching stock data:", error);
@@ -34,7 +33,7 @@ export default function StockDetailPage() {
 
 
   useEffect(() => {
-    console.log('Stock state:', stock); // stock 상태 출력
+    console.log('Stock state:', stock);
   }, [stock]);
 
   if (isLoading) {
