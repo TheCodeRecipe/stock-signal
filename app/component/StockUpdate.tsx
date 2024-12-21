@@ -31,6 +31,7 @@ export default function StockUpdate() {
     setIsLoading(true);
     try {
       const result = await updateStocks(); // 서버 함수 호출
+      console.log("result : "+result);
       if (result.success) {
         alert(result.message); // 성공 메시지
 
