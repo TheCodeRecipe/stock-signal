@@ -41,5 +41,3 @@ yarn-error.log*
 next-env.d.ts
 
 # ignored files or folders
-app/update/
-app/action/update.ts
