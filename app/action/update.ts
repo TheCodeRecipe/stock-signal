@@ -21,6 +21,8 @@ export async function updateStocks(): Promise<{ success: boolean; message: strin
       },
     });
 
+    console.log("Response status:", response.status); // 응답 상태 코드 확인
+
     if (!response.ok) {
       const errorData = await response.json();
       throw new Error(errorData.error || "업데이트 실패");
