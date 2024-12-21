@@ -46,7 +46,16 @@ export default function Home() {
       </button>
     </Link>
   </div>
-
+  {/* 아래쪽 버튼 */}
+  <div>
+    <Link href="/update">
+      <button
+        className="w-64 px-6 py-3 text-lg font-semibold text-white rounded-lg shadow-md transition-all bg-indigo-500 hover:bg-indigo-600"
+      >
+        관리자 페이지
+      </button>
+    </Link>
+  </div>
 </div>
 
   );
