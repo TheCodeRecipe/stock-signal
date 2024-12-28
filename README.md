@@ -28,7 +28,6 @@ Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며,
 ### **결과 표시**
 - 분석 결과와 최신 업데이트 시간은 UI를 통해 직관적으로 표시.
 
-![데이터업데이트](https://github.com/user-attachments/assets/710db18d-d22f-4d8a-a29f-a417bee2ca5f)
 
 ## **사용 기술**
 - **프론트엔드**: TypeScript, React, Tailwind CSS
@@ -36,7 +35,7 @@ Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며,
 - **배포**: Vercel
 - **데이터 분석**: Yahoo Finance API
 
-
+![데이터업데이트](https://github.com/user-attachments/assets/710db18d-d22f-4d8a-a29f-a417bee2ca5f)
 ## **특징**
 - **보안 강화**:
   - JWT 기반 인증으로 업로드 작업 보호.
