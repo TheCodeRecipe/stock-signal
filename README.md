@@ -40,6 +40,6 @@ Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며,
  
 ## **사용 기술**
 - **프론트엔드**: TypeScript, React, Tailwind CSS
-- **백엔드**: Python (Flask), JWT, SQLite
+- **백엔드**: Python (Flask), JWT, PostgreSQL  
 - **배포**: Vercel
 - **주식 가격 데이터 출처**: Yahoo Finance API
