@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stock Signal - 주식 데이터 분석 사이트
 
-## Getting Started
+![main_800](https://github.com/user-attachments/assets/615b8899-0981-47e9-b143-d4ad300dcbd6.gif)
+![main_800](https://github.com/user-attachments/assets/710db18d-d22f-4d8a-a29f-a417bee2ca5f.gif)
 
-First, run the development server:
+Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며, JWT 인증 기반의 주식 데이터 업데이트 기능을 포함한 웹 애플리케이션 프로젝트입니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **기능 소개**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **JWT 기반 회원 인증**
+- 비밀번호를 이용한 로그인 및 인증 기능.
+- JWT를 이용하여 사용자 인증 및 업로드 페이지 접근 제한.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **주식 데이터 업데이트**
+- 로그인 상태에서 **"업데이트" 버튼**을 클릭하면 주식 데이터를 업데이트 가능.
+- 주식 데이터를 다운로드, 분석 후 데이터베이스에 업로드.
+- 작업 완료 후 최신 업데이트 시간 표시.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **주식 데이터 분석 및 추측**
+- **야후 파이낸스** 데이터를 가져와 주식 정보를 분석.
+- 이동평균선, 저항선, 지지선등을 계산하여 기술적 분석 지원.
+- 직접 설계한 로직을 기반으로 주식의 상승/하락 신호를 추측.
+- 분석 결과는 업데이트된 데이터로 저장 및 활용 가능.
 
-## Learn More
+### **데이터베이스 관리**
+- 최신 주식 데이터를 데이터베이스에 업로드 및 저장.
+- 과거 데이터 삭제 및 새 데이터로 업데이트.
 
-To learn more about Next.js, take a look at the following resources:
+### **결과 표시**
+- 분석 결과와 최신 업데이트 시간은 UI를 통해 직관적으로 표시.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## **사용 기술**
+- **프론트엔드**: TypeScript, React, Tailwind CSS
+- **백엔드**: Python (Flask), JWT, SQLite
+- **배포**: Vercel
+- **데이터 분석**: Yahoo Finance API
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **특징**
+- **보안 강화**:
+  - JWT 기반 인증으로 업로드 작업 보호.
+  - HTTPS 환경에서 안전한 쿠키 처리.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **효율적 업데이트**:
+  - 로그인 상태에서만 데이터 업데이트 가능.
+  - 최신 주식 데이터를 다운로드 및 분석 후 데이터베이스에 반영.
