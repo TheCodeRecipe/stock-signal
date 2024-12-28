@@ -1,7 +1,7 @@
 # Stock Signal - 주식 데이터 분석 사이트
 
-![main_800](https://github.com/user-attachments/assets/615b8899-0981-47e9-b143-d4ad300dcbd6.gif)
-![main_800](https://github.com/user-attachments/assets/710db18d-d22f-4d8a-a29f-a417bee2ca5f.gif)
+![데이터메인](https://github.com/user-attachments/assets/615b8899-0981-47e9-b143-d4ad300dcbd6)
+![데이터업데이트](https://github.com/user-attachments/assets/710db18d-d22f-4d8a-a29f-a417bee2ca5f)
 
 Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며, JWT 인증 기반의 주식 데이터 업데이트 기능을 포함한 웹 애플리케이션 프로젝트입니다.
 
@@ -29,11 +29,13 @@ Stock Signal은 주식 데이터를 분석하고, 최신 정보를 제공하며,
 ### **결과 표시**
 - 분석 결과와 최신 업데이트 시간은 UI를 통해 직관적으로 표시.
 
+
 ## **사용 기술**
 - **프론트엔드**: TypeScript, React, Tailwind CSS
 - **백엔드**: Python (Flask), JWT, SQLite
 - **배포**: Vercel
 - **데이터 분석**: Yahoo Finance API
+
 
 ## **특징**
 - **보안 강화**:
