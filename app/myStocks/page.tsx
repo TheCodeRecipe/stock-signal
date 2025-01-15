@@ -18,9 +18,9 @@ interface FavoriteStock {
 
 export default function Home() {
   const [stocks, setStocks] = useState<FavoriteStock[] | null>(null);
-  const [isGlobalLoading, setIsGlobalLoading] = useState(false); // 전체 로딩
-  const [isDeleting, setIsDeleting] = useState(false); // 삭제 작업 로딩
-  const [isAdding, setIsAdding] = useState(false); // 추가 작업 로딩
+  const [isGlobalLoading, setIsGlobalLoading] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isAdding, setIsAdding] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const router = useRouter();
@@ -30,13 +30,13 @@ export default function Home() {
   useEffect(() => {
     const fetchStocks = async () => {
       try {
-        setIsGlobalLoading(true); // 로딩 시작
-        const data = await fetchFavoriteStocks(); // 관심종목 API 호출
+        setIsGlobalLoading(true);
+        const data = await fetchFavoriteStocks();
         setStocks(data);
       } catch (error) {
         console.error('Error fetching stocks:', error);
       } finally {
-        setIsGlobalLoading(false); // 로딩 종료
+        setIsGlobalLoading(false);
       }
     };
 
@@ -47,19 +47,19 @@ export default function Home() {
   const handleDelete = async (stockCode: string) => {
     if (confirm('이 관심종목을 삭제하시겠습니까?')) {
       try {
-        setIsDeleting(true); // 삭제 작업 로딩 시작
+        setIsDeleting(true);
         const result = await UserdeleteFavoriteStock(stockCode);
         if (result.success) {
           setStocks(
             prev => prev?.filter(stock => stock.stockCode !== stockCode) ?? null
-          ); // 삭제 처리
+          );
         } else {
           alert(result.message);
         }
       } catch (error) {
         alert('삭제 중 오류가 발생했습니다.');
       } finally {
-        setIsDeleting(false); // 삭제 작업 로딩 종료
+        setIsDeleting(false);
       }
     }
   };
@@ -67,7 +67,7 @@ export default function Home() {
   // 모달에서 종목 선택
   const handleSelectStock = async (stockId: number) => {
     try {
-      setIsModalOpen(false); // 모달 닫기
+      setIsModalOpen(false);
       setIsAdding(true);
 
       const data = await UserFavoriteAddStock(stockId);
@@ -82,7 +82,7 @@ export default function Home() {
       console.error('Error adding stock:', error);
       alert('추가 중 오류가 발생했습니다.');
     } finally {
-      setIsAdding(false); // 추가 작업 로딩 종료
+      setIsAdding(false);
     }
   };
 
