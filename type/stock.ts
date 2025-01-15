@@ -28,3 +28,33 @@ export interface Stock {
     resistance_3: string;
   }
   
+  export interface StockCamel {
+    stockname: string;
+    stockcode: string;
+    currentprice: number;
+    priceChangeValue: number;
+    priceChangeStatus: string;
+    volume: number;
+    volumechangerate: number;
+    action: string;
+    candlePattern: string;
+    macdTrend: string;
+    rsiStatus: string;
+    volumeTrend: string;
+    priceVsBollinger: string;
+    slope5: string;
+    slope20: string;
+    slope60: string;
+    slope120: string;
+    recentMaxVolumeDate: string;
+    recentMaxVolumeChange: number;
+    recentMaxVolumeTrend: string;
+    recentMaxVolumeValue: number;
+    support1: string;
+    support2: string;
+    support3: string;
+    resistance1: string;
+    resistance2: string;
+    resistance3: string;
+  }
+  
