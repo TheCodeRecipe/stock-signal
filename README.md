@@ -1,4 +1,4 @@
-📄 **[日本語バージョンはこちら (日本語README)](README_JP.md)**
+📄 **[日本語バージョンはこちら](README_JP.md)**
 
 # Stock Signal - 주식 데이터 분석 사이트
 
