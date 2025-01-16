@@ -55,4 +55,4 @@ Stock Signal은 주식 데이터를 분석하고 사용자와 관리자용 기�
 
 🔗 **[Stock Signal 파이썬 리포지토리](https://github.com/TheCodeRecipe/stock_api)**
 
-🔗 **[Stock Signal 스프링 리포지토리](https://github.com/TheCodeRecipe/stock-spring)**
+🔗 **[Stock Signal 스프링 리포지토리](https://github.com/TheCodeRecipe/stock_spring)**
