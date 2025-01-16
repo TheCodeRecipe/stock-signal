@@ -1,6 +1,6 @@
 # Stock Signal - 주식 데이터 분석 사이트
 
-Stock Signal은 주식 데이터를 분석하고 사용자와 관리자용 기능을 제공하는 웹 애플리케이션입니다.
+Stock Signal은 주식 데이터를 분석하고 사용자와 관리자용 기능을 제공하는 웹 애플리케이션입니다.<br>
 사용자는 관심주식을 추가 삭제해서 원하는 주식의 분석 데이터를 조회할 수 있으며, 관리자는 로그인 후 데이터 갱신(업데이트) 기능을 사용할 수 있습니다.
 
 
@@ -51,7 +51,8 @@ Stock Signal은 주식 데이터를 분석하고 사용자와 관리자용 기�
 - **데이터 분석**: pandas
 - **데이터 출처**: Yahoo Finance API
 
+<br>
 
-🔗 **[Stock Signal 파이썬 리포지토리](https://github.com/TheCodeRecipe/stock-api)**
+🔗 **[Stock Signal 파이썬 리포지토리](https://github.com/TheCodeRecipe/stock_api)**
 
 🔗 **[Stock Signal 스프링 리포지토리](https://github.com/TheCodeRecipe/stock-spring)**
