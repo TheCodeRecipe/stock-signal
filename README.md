@@ -31,23 +31,24 @@ Stock Signal은 주식 데이터를 분석하고 사용자와 관리자용 기�
 
 ## **사용 기술**
 
-### **프론트엔드 (Next.js)**
+
+### **프론트엔드**
 - **프레임워크**: Next.js (React 기반)
 - **스타일링**: Tailwind CSS
 - **상태 관리**: React Query (API 요청과 데이터 캐싱)
 - **권한별 접근**: Matcher (사용자와 관리자의 권한별 페이지 접근 제한)
 
-### **백엔드 (Spring Boot)**
+### **백엔드**
+#### **Spring Boot**
 - **프레임워크**: Spring Boot
 - **데이터베이스**: PostgreSQL
 - **라이브러리**: Spring Security, Spring Data JPA
 - **빌드 도구**: Gradle
 - **통신**: REST API
 
-### **데이터 수집 및 분석 (Python)**
+#### **Python (Flask)**
 - **프레임워크**: Flask
 - **데이터 분석**: pandas
-- **CORS 처리**: flask-cors
 - **데이터 출처**: Yahoo Finance API
 
 
