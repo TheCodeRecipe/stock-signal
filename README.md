@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Stock Signal - 주식 데이터 분석 사이트**
 
-## Getting Started
+**Stock Signal**은 주식 데이터를 분석하고, 최신 정보를 제공하며, JWT 인증 기반의 **주식 데이터 업데이트 기능**을 포함한 웹 애플리케이션 프로젝트입니다.
 
-First, run the development server:
+## **기능 소개**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### **JWT 기반 회원 인증**
+- 비밀번호를 이용한 로그인 및 인증 기능.
+- JWT를 이용하여 사용자 인증 및 업로드 페이지 접근 제한.
+- **`fetch` API**를 활용하여 인증 상태를 검증.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **주식 데이터 업데이트**
+- 로그인 상태에서 **"업데이트" 버튼**을 클릭하면 주식 데이터를 업데이트 가능.
+- 주식 데이터를 다운로드, 분석 후 데이터베이스에 업로드.
+- 작업 완료 후 최신 업데이트 시간 표시.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **데이터베이스 관리**
+- 최신 주식 데이터를 데이터베이스에 업로드 및 저장.
+- 과거 데이터 삭제 및 새 데이터로 업데이트.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **데이터 시각화**
+- 업데이트된 주식 데이터를 기반으로 UI에서 정보를 표시.
+- 최신 업데이트 시간을 직관적으로 확인 가능.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **사용 기술**
+- **프론트엔드**: TypeScript, React, Tailwind CSS
+- **백엔드**: Python (Flask), JWT, SQLite
+- **배포**: Vercel
+- **데이터 분석**: Yahoo Finance API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## **특징**
+- **보안 강화**:
+  - JWT 기반 인증으로 업로드 작업 보호.
+  - HTTPS 환경에서 안전한 쿠키 처리.
 
-## Deploy on Vercel
+- **효율적 업데이트**:
+  - 로그인 상태에서만 데이터 업데이트 가능.
+  - 최신 주식 데이터를 다운로드 및 분석 후 데이터베이스에 반영.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **사용자 친화적 인터페이스**:
+  - 직관적인 UI와 클린한 디자인.
+  - 최신 업데이트 시간 표시를 통해 작업 완료 여부 확인 가능.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## **향후 개선점**
+- 작업 시간 최적화를 위한 백엔드 비동기 처리.
+- 타임아웃 문제를 해결하기 위한 플랫폼 업그레이드.
+- 데이터 시각화 추가(차트 및 그래프).
+
+---
+
+## **설치 및 실행**
+1. 프로젝트를 로컬에 클론합니다:
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   cd your-repo-name
