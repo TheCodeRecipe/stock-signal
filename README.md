@@ -22,8 +22,6 @@ Stock Signal은 **전날 종가 데이터를 분석**하여 사용자와 관리�
 ![리스트확인](https://github.com/user-attachments/assets/12acbdf6-da85-44f3-8e26-1e87b1e58a2a)
 
 3. **관심 주식 추가 삭제**
-   
-![관심종목추가삭제](https://github.com/user-attachments/assets/6532b81e-7c10-49c6-8359-de8da1fce4c1)
 
 4. **주식 데이터 시각화**
    - 스프링(Spring) API에서 데이터를 가져와 Chart로 표시.
@@ -35,8 +33,6 @@ Stock Signal은 **전날 종가 데이터를 분석**하여 사용자와 관리�
 1. **데이터 갱신(업데이트)**
    - 관리자로 로그인 시 **"업데이트 버튼"** 활성화.
    - 버튼 클릭 시 Flask API 호출 → 데이터 갱신 및 분석 → Spring 서버에서 DB 업데이트
-
-![업데이트](https://github.com/user-attachments/assets/a09cbaed-446c-4902-a0ce-c11f840b4b29)
 
 2. **업데이트 결과 확인**
    - 업데이트 완료 후, 최신 데이터와 분석 결과 확인 가능.
